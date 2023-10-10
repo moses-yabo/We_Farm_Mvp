@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YM Farm | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="logo/logo.svg" alt="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <ul class="nav-icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <li><i class="fas fa-search" id="search-btn"></i></li>
+            <li><i class="fas fa-user log-popup" id="login-btn"></i></li>
+            <li><i class="fas fa-shopping-cart" id="cart-btn"></i></li>
+        </ul>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/farm_opener.jpg" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">R4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/farm_opener.jpg" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">R4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/farm_opener.jpg" alt="">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">R4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : R19.69/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <div class="login-form">        
+            <form action="#" class="bottom-form">
+                <h2>Create account</h2>
+                <div class="input-field">
+                    <input type="email" name="email" id="c-email" placeholder="Email address"/>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="c-pass" placeholder="Password"/>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="c-pass2" placeholder="Confirm password"/>
+                </div>
+                <div class="input-field">
+                    <input type="submit" value="Continue">
+                </div>
+            </form>
+
+            <div class="switch-btn">
+                <span>No account? <button class="signup-btn" type="submit">Sign Up</button></span>
+                <span>Have an account? <button class="signin-btn" type="submit">Sign In</button></span>
+            </div>
+
+            <form action="#" class="top-form">
+                <h2>Login</h2>
+                <div class="input-field">
+                    <input type="email" name="email" id="email" placeholder="Email address"/>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="pass" placeholder="Password"/>
+                </div>
+                <div class="input-field">
+                    <div class="pass-txt"><a href="#">Forgot password?</a></div>
+                    <input type="submit" value="Log In">
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <section class="home-container" id="home">
+        <h1>Sell livestock and fodder here</h1>
+        <p>We help sellers find the buyers all around South Africa 
+            and buyers who need to buy Cattles,<br> Hay and Straws via 
+            our plartform. All you need to do is to simple login into our 
+            plartform<br> and create a discriptive for sale listing complete with 
+            photos and all the necessary details
+            </p>
+        <div class="home-btn">
+            <input id="sell" type="button" value="Sell Cattle">
+            <!-- <button class="log-popup" type="button">Login</button> -->
+            <input id="buy" type="button" value="Buy Cattle">
+        </div>
+
+        <div class="pop-sell">
+            <span class="log-close">&times;</span>
+            <div class="sell-form">
+            <div class="expand">
+                <input type="radio" name="collapse" id="handle1" checked>
+                <h2 class="handle"><label for="handle1">Contact Information</label></h2>
+                <div class="form">
+                    <form class="contact-det" action="contact.txt">
+                        <!-- <form action="#"> -->
+                            <div class="input-field fname">
+                                <input type="text" placeholder="Full Name..." name="subject">
+                                <!-- <span class="bar"></span> -->
+                            </div>
+                            <div class="input-field mail">
+                                <input type="text" placeholder="Email Address..." name="name">
+                                <span class="bar"></span>
+                            </div>
+                        <div class="input-field number">
+                            <input type="email" placeholder="Phone Number..." name="email">
+                            <span class="bar"></span>
+                        </div>
+                    </form>
+    
+                    <h2 class="handle" style="padding-top: 25px; color: black; text-align: center; font-size: 20px;">What are you selling?</h2>
+                </div>
+            </div>
+    
+            <div class="change">
+                <div class="input-area radio-btn">
+                    <div class="switches-container">
+                        <input type="radio" id="livestock" name="switchPlan" value="Monthly" checked>
+                        <input type="radio" id="hayStraw" name="switchPlan" value="Yearly">
+                        <label class="me" for="livestock">Livestock</label>
+                        <label class="you" for="hayStraw">Hay/Straw</label>
+                        <div class="switch-wrapper">
+                            <div class="switch">
+                                <div>Livestock</div>
+                                <div>Hay/Straw</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="listing-box expand shift2">
+                <input type="radio" name="collapse" id="handle2">
+                <div class="listing-left">
+                    <h2 class="handle"><label for="handle2">Livestock Information</label></h2>
+                    <div class="form">
+                        <form class="crop-det" action="contact.txt">
+                            <div class="input-field fname">
+                                <select>
+                                    <option selected disabled>Type of Animal</option>
+                                    <option>Cattle</option>
+                                    <option>Sheep</option>
+                                    <option>Goat</option>  
+                                </select>
+        
+                                <select>
+                                    <option selected disabled>Select Class</option>
+                                    <option>Cattle</option>
+                                    <option>Sheep</option>
+                                    <option>Goat</option>      
+                                </select>
+                            </div>
+                            <div class="input-field mail">
+                                <input type="text" placeholder="Average Weight..." name="name">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field number">
+                                <input type="email" placeholder="How many heads..." name="email">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field location">
+                                <input type="text" placeholder="Search your location..." name="name">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field price">
+                                <input type="email" placeholder="Selling Price..." name="email">
+                                <span class="bar"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+                <div class="listing-right">
+                    <h2 class="handle"><label for="handle2">Hay/Straw Information</label></h2>
+                    <div class="form">
+                        <form class="live-det" action="contact.txt">
+                            <div class="input-field fname">
+                                <select>
+                                    <option selected disabled>Bale Category</option>
+                                    <option>Hay</option>
+                                    <option>Straw</option>    
+                                </select>
+        
+                                <select>
+                                    <option selected disabled>Bale Type</option>
+                                    <option>Bags</option> 
+                                    <option>Large Round</option>
+                                    <option>Small Round</option>
+                                    <option>Large Square</option>
+                                    <option>Small Square</option>
+                                </select>
+        
+                                <input type="text" placeholder="How many bales..." name="name">
+                            </div>
+                            <div class="input-field mail">
+                                <input type="text" placeholder="Weight (kg)..." name="name">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field number">
+                                <input type="email" placeholder="Email Address..." name="email">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field location">
+                                <input type="text" placeholder="Search your location..." name="name">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-field price">
+                                <input type="email" placeholder="Selling Price..." name="email">
+                                <span class="bar"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="expand check">
+                <input type="radio" name="collapse" id="handle3" accept="image/jpg, image/jpg, image/jpeg, image/heic, image/jfif, image/tif, image/jpeg, image/webp, image/gif">
+                <h2 class="handle" style="margin-top: 15px;"><label for="handle3">Add Photos and Videos</label></h2>
+                <div class="form">
+                    <form class="upload-det" action="contact.txt">
+                        <div class="input-field format">
+                            <p class="gray-text" style="margin: initial;"><i><strong>Tip:</strong> If shooting video from your phone, make sure to hold your phone horizontally.</i></p>
+                            <!-- <p class="gray-text"><i>Accepted Photo Formats: jpg, png, jpeg,gif, heic, jfif, tif, webp</i></p>
+                            <p class="gray-text"><i>Accepted Video Formats: mkv, mp4, mpeg, mov, avi, ismv, m4v, flv, mpg, wmv, 3gp, asf, 3g2, mts</i></p> -->
+                        </div>
+                        <div class="input-field drop-box">
+                            <input type="file" name="file-input" id="upload" hidden="">
+                            <label class="upload-file" for="upload"><i class="fa fa-cloud-upload"></i>Choose or Drag &amp; Drop Files</label>
+                        </div>
+                        <ul class="input-field upload-info">
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>            
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>            
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name-size">
+                                    <span class="filename">Siya Mketsu signat... .png</span>
+                                    <span class="filesize">162 KB </span>
+                                </div>
+                                <div class="status">
+                                    <span class="filestatus">100%</span>
+                                    <span class="fileview">-------</span>
+                                </div>
+                                <div class="remove">
+                                    <div class="cross"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="input-field sell-btn">
+                            <input type="submit" value="Continue">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+    
+    
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading"> latest <span>Products</span> </h1>    
+        <div class="box-container">    
+            <div class="box">
+                <div class="image">
+                    <img src="hay/img-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="name-category">Hay</h3>
+                    <span class="price">Price: R150.00</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> 113 folokhwe cres</span>
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="cattle/img-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="name-category">Cow</h3>
+                    <span class="price">Price: R14 600.00</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> 113 folokhwe cres</span>
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="hay/img-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="name-category">Hay</h3>
+                    <span class="price">Price: R240.00</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> 113 folokhwe cres</span>
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="cattle/img-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="name-category">Cow</h3>
+                    <span class="price">Price: R16 200.00</span>
+                    <span class="location"><i class="fas fa-map-marker-alt"></i> 113 folokhwe cres</span>
+                    <div class="icons">
+                        <a href="#" class="cart-btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <a class="show-more" href="products.html">Show more</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <div class="logo">
+                    <a href="#"><img src="logo/logo.svg" alt="logo"></a>
+                </div>
+                <p>Find us othe following social medias</p>
+                <div class="share">
+                    <a href="https://m.facebook.com/musa.mketsu" target="_blank" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/LindileYabo" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/musamketsu/" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://za.linkedin.com/in/siyasanga-mketsu-469575187?trk=people-guest_people_search-card" target="_blank" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="tel:0214567890" class="links"> <i class="fas fa-phone"></i>021 456 7890</a>
+                <a href="tel:0871234567" class="links"> <i class="fas fa-phone"></i>087 123 4567</a>
+                <a href="mailto:livestock@younglings.africa" class="links"> <i class="fas fa-envelope"></i>livestock@younglings.africa</a>
+                <a href="https://goo.gl/maps/2NMAjkxpmsSv6nyP7" target="_blank" class="links"> <i class="fas fa-map-marker-alt"></i>31 Lower long, Cape Town, 8001</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i>Products</a>
+                <a href="products.html" class="links"> <i class="fas fa-arrow-right"></i>About us</a>
+                <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i>Contact us</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+        </div>
+
+        <div class="credit"> Created by <span> Mr. S Mketsu & Mr. L yabo </span> | © 2022 all rights reserved </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
